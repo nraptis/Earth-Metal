@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D1B8E4D29A6485E008558DB /* DimensionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B8E4C29A6485E008558DB /* DimensionBridge.swift */; };
+		0D6FA44A299570E800BE0184 /* RebuildEarthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FA449299570E800BE0184 /* RebuildEarthApp.swift */; };
+		0D6FA44C299570E800BE0184 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FA44B299570E800BE0184 /* ContentView.swift */; };
+		0D6FA44E299570EB00BE0184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6FA44D299570EB00BE0184 /* Assets.xcassets */; };
+		0D6FA451299570EB00BE0184 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6FA450299570EB00BE0184 /* Preview Assets.xcassets */; };
+		0D6FA4582995713E00BE0184 /* Graphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FA4572995713E00BE0184 /* Graphics.swift */; };
+		0D86FBCE2999186D004F7CCE /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86FBCD2999186D004F7CCE /* Math.swift */; };
+		0D86FBD129991C0B004F7CCE /* RecyclerShapeTriangle2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86FBD029991C0B004F7CCE /* RecyclerShapeTriangle2D.swift */; };
+		0D86FBD3299928B0004F7CCE /* RecyclerShapeQuad2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86FBD2299928B0004F7CCE /* RecyclerShapeQuad2D.swift */; };
+		0D86FBD529992935004F7CCE /* Recycler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86FBD429992935004F7CCE /* Recycler.swift */; };
+		0D86FBD7299937B4004F7CCE /* Sprite.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0D86FBD6299937B4004F7CCE /* Sprite.metal */; };
+		0D86FBDB29993FA5004F7CCE /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D86FBDA29993FA5004F7CCE /* diamond.png */; };
+		0D86FBDD299940D2004F7CCE /* UniformsSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86FBDC299940D2004F7CCE /* UniformsSprite.swift */; };
+		0D86FBDF2999481B004F7CCE /* Sprite2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86FBDE2999481B004F7CCE /* Sprite2D.swift */; };
+		0D86FBE12999494E004F7CCE /* RecyclerSprite2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86FBE02999494E004F7CCE /* RecyclerSprite2D.swift */; };
+		0D89E24329996509004E2BCB /* ShapeNodeIndexed.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0D89E24229996509004E2BCB /* ShapeNodeIndexed.metal */; };
+		0D89E2452999698B004E2BCB /* UniformsShapeNodeIndexed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D89E2442999698B004E2BCB /* UniformsShapeNodeIndexed.swift */; };
+		0D89E24729997CC6004E2BCB /* SpriteNodeIndexed.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0D89E24629997CC6004E2BCB /* SpriteNodeIndexed.metal */; };
+		0D97264A29A70A97005DDEBF /* ZoomTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D97264929A70A97005DDEBF /* ZoomTable.swift */; };
+		0D97265429A7AD32005DDEBF /* star_tile_3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D97264C29A7AD31005DDEBF /* star_tile_3_1.png */; };
+		0D97265529A7AD32005DDEBF /* star_tile_3_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D97264D29A7AD31005DDEBF /* star_tile_3_0.png */; };
+		0D97265629A7AD32005DDEBF /* star_tile_1_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D97264E29A7AD31005DDEBF /* star_tile_1_0.png */; };
+		0D97265729A7AD32005DDEBF /* star_tile_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D97264F29A7AD31005DDEBF /* star_tile_1_1.png */; };
+		0D97265829A7AD32005DDEBF /* star_tile_0_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D97265029A7AD31005DDEBF /* star_tile_0_0.png */; };
+		0D97265929A7AD32005DDEBF /* star_tile_0_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D97265129A7AD31005DDEBF /* star_tile_0_1.png */; };
+		0D97265A29A7AD32005DDEBF /* star_tile_2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D97265229A7AD31005DDEBF /* star_tile_2_1.png */; };
+		0D97265B29A7AD32005DDEBF /* star_tile_2_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D97265329A7AD31005DDEBF /* star_tile_2_0.png */; };
+		0D97265E29A7AECC005DDEBF /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D97265D29A7AECC005DDEBF /* Stars.swift */; };
+		0D990AFB2999B097005B5F50 /* CubeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D990AFA2999B097005B5F50 /* CubeScene.swift */; };
+		0D9FC90D29A5999C0014F77D /* UniformsSpriteNodeIndexed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FC90C29A5999C0014F77D /* UniformsSpriteNodeIndexed.swift */; };
+		0D9FC90F29A59B3B0014F77D /* EarthScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FC90E29A59B3B0014F77D /* EarthScene.swift */; };
+		0D9FC91229A59CF40014F77D /* UnitPointSphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FC91129A59CF40014F77D /* UnitPointSphere.swift */; };
+		0D9FC91429A59E390014F77D /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FC91329A59E390014F77D /* Earth.swift */; };
+		0D9FC91629A5A8140014F77D /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FC91529A5A8140014F77D /* Camera.swift */; };
+		0D9FC91829A5AF720014F77D /* CameraTestMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FC91729A5AF720014F77D /* CameraTestMenuView.swift */; };
+		0D9FC92329A5B5A00014F77D /* earth_tile_0_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9FC91B29A5B5A00014F77D /* earth_tile_0_1.png */; };
+		0D9FC92429A5B5A00014F77D /* earth_tile_0_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9FC91C29A5B5A00014F77D /* earth_tile_0_0.png */; };
+		0D9FC92529A5B5A00014F77D /* earth_tile_2_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9FC91D29A5B5A00014F77D /* earth_tile_2_0.png */; };
+		0D9FC92629A5B5A00014F77D /* earth_tile_2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9FC91E29A5B5A00014F77D /* earth_tile_2_1.png */; };
+		0D9FC92729A5B5A00014F77D /* earth_tile_3_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9FC91F29A5B5A00014F77D /* earth_tile_3_0.png */; };
+		0D9FC92829A5B5A00014F77D /* earth_tile_3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9FC92029A5B5A00014F77D /* earth_tile_3_1.png */; };
+		0D9FC92929A5B5A00014F77D /* earth_tile_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9FC92129A5B5A00014F77D /* earth_tile_1_1.png */; };
+		0D9FC92A29A5B5A00014F77D /* earth_tile_1_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9FC92229A5B5A00014F77D /* earth_tile_1_0.png */; };
+		0D9FC92C29A5B5D40014F77D /* TileFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FC92B29A5B5D40014F77D /* TileFactory.swift */; };
+		0D9FC92E29A5B83F0014F77D /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FC92D29A5B83F0014F77D /* Face.swift */; };
+		0DAA6732299675E300286C54 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAA6731299675E300286C54 /* GameScene.swift */; };
+		0DAA67342996763600286C54 /* GameSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAA67332996763600286C54 /* GameSceneView.swift */; };
+		0DAEA4A72997176400C3A849 /* Uniforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEA4A62997176400C3A849 /* Uniforms.swift */; };
+		0DAEA4AC29971A0000C3A849 /* Shape.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEA4AB29971A0000C3A849 /* Shape.metal */; };
+		0DAEA4AE29971A7B00C3A849 /* UniformsShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEA4AD29971A7B00C3A849 /* UniformsShape.swift */; };
+		0DAEA4B029971AC800C3A849 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEA4AF29971AC800C3A849 /* Matrix.swift */; };
+		0DAEA4B8299721C400C3A849 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEA4B4299721C400C3A849 /* MetalView.swift */; };
+		0DAEA4B9299721C400C3A849 /* MetalPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEA4B5299721C400C3A849 /* MetalPipeline.swift */; };
+		0DAEA4BA299721C400C3A849 /* MetalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEA4B6299721C400C3A849 /* MetalEngine.swift */; };
+		0DAEA4BB299721C400C3A849 /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEA4B7299721C400C3A849 /* MetalViewController.swift */; };
+		0DD2818029A6B39100DFE839 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2817F29A6B39100DFE839 /* GestureView.swift */; };
+		0DD2818229A6B9F300DFE839 /* GestureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2818129A6B9F300DFE839 /* GestureProcessor.swift */; };
+		0DD2818429A6F7AD00DFE839 /* CameraCalibrationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2818329A6F7AD00DFE839 /* CameraCalibrationTool.swift */; };
+		0DD2818629A6FC5000DFE839 /* Quaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2818529A6FC5000DFE839 /* Quaternion.swift */; };
+		0DEAE991299DCDE100EDA937 /* RecyclerShapeTriangle3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEAE990299DCDE100EDA937 /* RecyclerShapeTriangle3D.swift */; };
+		0DEAE993299DD53200EDA937 /* RecyclerShapeQuad3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEAE992299DD53200EDA937 /* RecyclerShapeQuad3D.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D1B8E4C29A6485E008558DB /* DimensionBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimensionBridge.swift; sourceTree = "<group>"; };
+		0D6FA446299570E800BE0184 /* RebuildEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RebuildEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6FA449299570E800BE0184 /* RebuildEarthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RebuildEarthApp.swift; sourceTree = "<group>"; };
+		0D6FA44B299570E800BE0184 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D6FA44D299570EB00BE0184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D6FA450299570EB00BE0184 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D6FA4572995713E00BE0184 /* Graphics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphics.swift; sourceTree = "<group>"; };
+		0D86FBCD2999186D004F7CCE /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		0D86FBD029991C0B004F7CCE /* RecyclerShapeTriangle2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerShapeTriangle2D.swift; sourceTree = "<group>"; };
+		0D86FBD2299928B0004F7CCE /* RecyclerShapeQuad2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerShapeQuad2D.swift; sourceTree = "<group>"; };
+		0D86FBD429992935004F7CCE /* Recycler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recycler.swift; sourceTree = "<group>"; };
+		0D86FBD6299937B4004F7CCE /* Sprite.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Sprite.metal; sourceTree = "<group>"; };
+		0D86FBDA29993FA5004F7CCE /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond.png; sourceTree = "<group>"; };
+		0D86FBDC299940D2004F7CCE /* UniformsSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformsSprite.swift; sourceTree = "<group>"; };
+		0D86FBDE2999481B004F7CCE /* Sprite2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite2D.swift; sourceTree = "<group>"; };
+		0D86FBE02999494E004F7CCE /* RecyclerSprite2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerSprite2D.swift; sourceTree = "<group>"; };
+		0D89E24229996509004E2BCB /* ShapeNodeIndexed.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ShapeNodeIndexed.metal; sourceTree = "<group>"; };
+		0D89E2442999698B004E2BCB /* UniformsShapeNodeIndexed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformsShapeNodeIndexed.swift; sourceTree = "<group>"; };
+		0D89E24629997CC6004E2BCB /* SpriteNodeIndexed.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SpriteNodeIndexed.metal; sourceTree = "<group>"; };
+		0D97264929A70A97005DDEBF /* ZoomTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTable.swift; sourceTree = "<group>"; };
+		0D97264C29A7AD31005DDEBF /* star_tile_3_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_tile_3_1.png; sourceTree = "<group>"; };
+		0D97264D29A7AD31005DDEBF /* star_tile_3_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_tile_3_0.png; sourceTree = "<group>"; };
+		0D97264E29A7AD31005DDEBF /* star_tile_1_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_tile_1_0.png; sourceTree = "<group>"; };
+		0D97264F29A7AD31005DDEBF /* star_tile_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_tile_1_1.png; sourceTree = "<group>"; };
+		0D97265029A7AD31005DDEBF /* star_tile_0_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_tile_0_0.png; sourceTree = "<group>"; };
+		0D97265129A7AD31005DDEBF /* star_tile_0_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_tile_0_1.png; sourceTree = "<group>"; };
+		0D97265229A7AD31005DDEBF /* star_tile_2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_tile_2_1.png; sourceTree = "<group>"; };
+		0D97265329A7AD31005DDEBF /* star_tile_2_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_tile_2_0.png; sourceTree = "<group>"; };
+		0D97265D29A7AECC005DDEBF /* Stars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
+		0D990AFA2999B097005B5F50 /* CubeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeScene.swift; sourceTree = "<group>"; };
+		0D9FC90C29A5999C0014F77D /* UniformsSpriteNodeIndexed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformsSpriteNodeIndexed.swift; sourceTree = "<group>"; };
+		0D9FC90E29A59B3B0014F77D /* EarthScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthScene.swift; sourceTree = "<group>"; };
+		0D9FC91129A59CF40014F77D /* UnitPointSphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitPointSphere.swift; sourceTree = "<group>"; };
+		0D9FC91329A59E390014F77D /* Earth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earth.swift; sourceTree = "<group>"; };
+		0D9FC91529A5A8140014F77D /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		0D9FC91729A5AF720014F77D /* CameraTestMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTestMenuView.swift; sourceTree = "<group>"; };
+		0D9FC91B29A5B5A00014F77D /* earth_tile_0_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth_tile_0_1.png; sourceTree = "<group>"; };
+		0D9FC91C29A5B5A00014F77D /* earth_tile_0_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth_tile_0_0.png; sourceTree = "<group>"; };
+		0D9FC91D29A5B5A00014F77D /* earth_tile_2_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth_tile_2_0.png; sourceTree = "<group>"; };
+		0D9FC91E29A5B5A00014F77D /* earth_tile_2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth_tile_2_1.png; sourceTree = "<group>"; };
+		0D9FC91F29A5B5A00014F77D /* earth_tile_3_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth_tile_3_0.png; sourceTree = "<group>"; };
+		0D9FC92029A5B5A00014F77D /* earth_tile_3_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth_tile_3_1.png; sourceTree = "<group>"; };
+		0D9FC92129A5B5A00014F77D /* earth_tile_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth_tile_1_1.png; sourceTree = "<group>"; };
+		0D9FC92229A5B5A00014F77D /* earth_tile_1_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth_tile_1_0.png; sourceTree = "<group>"; };
+		0D9FC92B29A5B5D40014F77D /* TileFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileFactory.swift; sourceTree = "<group>"; };
+		0D9FC92D29A5B83F0014F77D /* Face.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
+		0DAA6731299675E300286C54 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		0DAA67332996763600286C54 /* GameSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneView.swift; sourceTree = "<group>"; };
+		0DAEA4A62997176400C3A849 /* Uniforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uniforms.swift; sourceTree = "<group>"; };
+		0DAEA4AB29971A0000C3A849 /* Shape.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shape.metal; sourceTree = "<group>"; };
+		0DAEA4AD29971A7B00C3A849 /* UniformsShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniformsShape.swift; sourceTree = "<group>"; };
+		0DAEA4AF29971AC800C3A849 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		0DAEA4B4299721C400C3A849 /* MetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		0DAEA4B5299721C400C3A849 /* MetalPipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalPipeline.swift; sourceTree = "<group>"; };
+		0DAEA4B6299721C400C3A849 /* MetalEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalEngine.swift; sourceTree = "<group>"; };
+		0DAEA4B7299721C400C3A849 /* MetalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
+		0DD2817F29A6B39100DFE839 /* GestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
+		0DD2818129A6B9F300DFE839 /* GestureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureProcessor.swift; sourceTree = "<group>"; };
+		0DD2818329A6F7AD00DFE839 /* CameraCalibrationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCalibrationTool.swift; sourceTree = "<group>"; };
+		0DD2818529A6FC5000DFE839 /* Quaternion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quaternion.swift; sourceTree = "<group>"; };
+		0DEAE98F299D869000EDA937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0DEAE990299DCDE100EDA937 /* RecyclerShapeTriangle3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerShapeTriangle3D.swift; sourceTree = "<group>"; };
+		0DEAE992299DD53200EDA937 /* RecyclerShapeQuad3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerShapeQuad3D.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D6FA443299570E800BE0184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D6FA43D299570E800BE0184 = {
+			isa = PBXGroup;
+			children = (
+				0D6FA448299570E800BE0184 /* RebuildEarth */,
+				0D6FA447299570E800BE0184 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D6FA447299570E800BE0184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D6FA446299570E800BE0184 /* RebuildEarth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D6FA448299570E800BE0184 /* RebuildEarth */ = {
+			isa = PBXGroup;
+			children = (
+				0D9FC91929A5B5A00014F77D /* Assets */,
+				0DEAE98F299D869000EDA937 /* Info.plist */,
+				0D86FBDA29993FA5004F7CCE /* diamond.png */,
+				0D97265C29A7AEB4005DDEBF /* [Stars] */,
+				0D9FC91029A59BCE0014F77D /* [Earth] */,
+				0DAEA4B3299721C400C3A849 /* [Metal] */,
+				0D86FBCF29991BAC004F7CCE /* [Recyclers] */,
+				0DAEA4AA299719D500C3A849 /* [Shaders] */,
+				0DAEA4A52997172500C3A849 /* [Uniforms] */,
+				0D6FA449299570E800BE0184 /* RebuildEarthApp.swift */,
+				0D6FA44B299570E800BE0184 /* ContentView.swift */,
+				0D6FA44D299570EB00BE0184 /* Assets.xcassets */,
+				0D6FA44F299570EB00BE0184 /* Preview Content */,
+				0D6FA4572995713E00BE0184 /* Graphics.swift */,
+				0DAA67332996763600286C54 /* GameSceneView.swift */,
+				0DAA6731299675E300286C54 /* GameScene.swift */,
+				0DD2818529A6FC5000DFE839 /* Quaternion.swift */,
+				0DAEA4AF29971AC800C3A849 /* Matrix.swift */,
+				0D86FBCD2999186D004F7CCE /* Math.swift */,
+				0D86FBDE2999481B004F7CCE /* Sprite2D.swift */,
+				0D990AFA2999B097005B5F50 /* CubeScene.swift */,
+				0D9FC91129A59CF40014F77D /* UnitPointSphere.swift */,
+				0D9FC91729A5AF720014F77D /* CameraTestMenuView.swift */,
+			);
+			path = RebuildEarth;
+			sourceTree = "<group>";
+		};
+		0D6FA44F299570EB00BE0184 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D6FA450299570EB00BE0184 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D86FBCF29991BAC004F7CCE /* [Recyclers] */ = {
+			isa = PBXGroup;
+			children = (
+				0D86FBD429992935004F7CCE /* Recycler.swift */,
+				0D86FBD029991C0B004F7CCE /* RecyclerShapeTriangle2D.swift */,
+				0D86FBD2299928B0004F7CCE /* RecyclerShapeQuad2D.swift */,
+				0D86FBE02999494E004F7CCE /* RecyclerSprite2D.swift */,
+				0DEAE990299DCDE100EDA937 /* RecyclerShapeTriangle3D.swift */,
+				0DEAE992299DD53200EDA937 /* RecyclerShapeQuad3D.swift */,
+			);
+			path = "[Recyclers]";
+			sourceTree = "<group>";
+		};
+		0D97264B29A7AD31005DDEBF /* star_tiles */ = {
+			isa = PBXGroup;
+			children = (
+				0D97264C29A7AD31005DDEBF /* star_tile_3_1.png */,
+				0D97264D29A7AD31005DDEBF /* star_tile_3_0.png */,
+				0D97264E29A7AD31005DDEBF /* star_tile_1_0.png */,
+				0D97264F29A7AD31005DDEBF /* star_tile_1_1.png */,
+				0D97265029A7AD31005DDEBF /* star_tile_0_0.png */,
+				0D97265129A7AD31005DDEBF /* star_tile_0_1.png */,
+				0D97265229A7AD31005DDEBF /* star_tile_2_1.png */,
+				0D97265329A7AD31005DDEBF /* star_tile_2_0.png */,
+			);
+			path = star_tiles;
+			sourceTree = "<group>";
+		};
+		0D97265C29A7AEB4005DDEBF /* [Stars] */ = {
+			isa = PBXGroup;
+			children = (
+				0D97265D29A7AECC005DDEBF /* Stars.swift */,
+			);
+			path = "[Stars]";
+			sourceTree = "<group>";
+		};
+		0D9FC91029A59BCE0014F77D /* [Earth] */ = {
+			isa = PBXGroup;
+			children = (
+				0D9FC90E29A59B3B0014F77D /* EarthScene.swift */,
+				0D9FC91329A59E390014F77D /* Earth.swift */,
+				0D9FC91529A5A8140014F77D /* Camera.swift */,
+				0D9FC92B29A5B5D40014F77D /* TileFactory.swift */,
+				0D9FC92D29A5B83F0014F77D /* Face.swift */,
+				0D1B8E4C29A6485E008558DB /* DimensionBridge.swift */,
+				0DD2817F29A6B39100DFE839 /* GestureView.swift */,
+				0DD2818129A6B9F300DFE839 /* GestureProcessor.swift */,
+				0DD2818329A6F7AD00DFE839 /* CameraCalibrationTool.swift */,
+				0D97264929A70A97005DDEBF /* ZoomTable.swift */,
+			);
+			path = "[Earth]";
+			sourceTree = "<group>";
+		};
+		0D9FC91929A5B5A00014F77D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0D97264B29A7AD31005DDEBF /* star_tiles */,
+				0D9FC91A29A5B5A00014F77D /* earth_tiles */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0D9FC91A29A5B5A00014F77D /* earth_tiles */ = {
+			isa = PBXGroup;
+			children = (
+				0D9FC91B29A5B5A00014F77D /* earth_tile_0_1.png */,
+				0D9FC91C29A5B5A00014F77D /* earth_tile_0_0.png */,
+				0D9FC91D29A5B5A00014F77D /* earth_tile_2_0.png */,
+				0D9FC91E29A5B5A00014F77D /* earth_tile_2_1.png */,
+				0D9FC91F29A5B5A00014F77D /* earth_tile_3_0.png */,
+				0D9FC92029A5B5A00014F77D /* earth_tile_3_1.png */,
+				0D9FC92129A5B5A00014F77D /* earth_tile_1_1.png */,
+				0D9FC92229A5B5A00014F77D /* earth_tile_1_0.png */,
+			);
+			path = earth_tiles;
+			sourceTree = "<group>";
+		};
+		0DAEA4A52997172500C3A849 /* [Uniforms] */ = {
+			isa = PBXGroup;
+			children = (
+				0DAEA4A62997176400C3A849 /* Uniforms.swift */,
+				0DAEA4AD29971A7B00C3A849 /* UniformsShape.swift */,
+				0D86FBDC299940D2004F7CCE /* UniformsSprite.swift */,
+				0D89E2442999698B004E2BCB /* UniformsShapeNodeIndexed.swift */,
+				0D9FC90C29A5999C0014F77D /* UniformsSpriteNodeIndexed.swift */,
+			);
+			path = "[Uniforms]";
+			sourceTree = "<group>";
+		};
+		0DAEA4AA299719D500C3A849 /* [Shaders] */ = {
+			isa = PBXGroup;
+			children = (
+				0DAEA4AB29971A0000C3A849 /* Shape.metal */,
+				0D86FBD6299937B4004F7CCE /* Sprite.metal */,
+				0D89E24229996509004E2BCB /* ShapeNodeIndexed.metal */,
+				0D89E24629997CC6004E2BCB /* SpriteNodeIndexed.metal */,
+			);
+			path = "[Shaders]";
+			sourceTree = "<group>";
+		};
+		0DAEA4B3299721C400C3A849 /* [Metal] */ = {
+			isa = PBXGroup;
+			children = (
+				0DAEA4B4299721C400C3A849 /* MetalView.swift */,
+				0DAEA4B5299721C400C3A849 /* MetalPipeline.swift */,
+				0DAEA4B6299721C400C3A849 /* MetalEngine.swift */,
+				0DAEA4B7299721C400C3A849 /* MetalViewController.swift */,
+			);
+			path = "[Metal]";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D6FA445299570E800BE0184 /* RebuildEarth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D6FA454299570EB00BE0184 /* Build configuration list for PBXNativeTarget "RebuildEarth" */;
+			buildPhases = (
+				0D6FA442299570E800BE0184 /* Sources */,
+				0D6FA443299570E800BE0184 /* Frameworks */,
+				0D6FA444299570E800BE0184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RebuildEarth;
+			productName = RebuildEarth;
+			productReference = 0D6FA446299570E800BE0184 /* RebuildEarth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D6FA43E299570E800BE0184 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					0D6FA445299570E800BE0184 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 0D6FA441299570E800BE0184 /* Build configuration list for PBXProject "RebuildEarth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D6FA43D299570E800BE0184;
+			productRefGroup = 0D6FA447299570E800BE0184 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D6FA445299570E800BE0184 /* RebuildEarth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D6FA444299570E800BE0184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D86FBDB29993FA5004F7CCE /* diamond.png in Resources */,
+				0D9FC92629A5B5A00014F77D /* earth_tile_2_1.png in Resources */,
+				0D9FC92929A5B5A00014F77D /* earth_tile_1_1.png in Resources */,
+				0D9FC92329A5B5A00014F77D /* earth_tile_0_1.png in Resources */,
+				0D9FC92A29A5B5A00014F77D /* earth_tile_1_0.png in Resources */,
+				0D97265B29A7AD32005DDEBF /* star_tile_2_0.png in Resources */,
+				0D97265929A7AD32005DDEBF /* star_tile_0_1.png in Resources */,
+				0D97265429A7AD32005DDEBF /* star_tile_3_1.png in Resources */,
+				0D9FC92529A5B5A00014F77D /* earth_tile_2_0.png in Resources */,
+				0D97265A29A7AD32005DDEBF /* star_tile_2_1.png in Resources */,
+				0D6FA451299570EB00BE0184 /* Preview Assets.xcassets in Resources */,
+				0D97265629A7AD32005DDEBF /* star_tile_1_0.png in Resources */,
+				0D97265829A7AD32005DDEBF /* star_tile_0_0.png in Resources */,
+				0D97265529A7AD32005DDEBF /* star_tile_3_0.png in Resources */,
+				0D9FC92429A5B5A00014F77D /* earth_tile_0_0.png in Resources */,
+				0D6FA44E299570EB00BE0184 /* Assets.xcassets in Resources */,
+				0D9FC92829A5B5A00014F77D /* earth_tile_3_1.png in Resources */,
+				0D9FC92729A5B5A00014F77D /* earth_tile_3_0.png in Resources */,
+				0D97265729A7AD32005DDEBF /* star_tile_1_1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D6FA442299570E800BE0184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD2818229A6B9F300DFE839 /* GestureProcessor.swift in Sources */,
+				0D990AFB2999B097005B5F50 /* CubeScene.swift in Sources */,
+				0DD2818029A6B39100DFE839 /* GestureView.swift in Sources */,
+				0DAA6732299675E300286C54 /* GameScene.swift in Sources */,
+				0D89E24329996509004E2BCB /* ShapeNodeIndexed.metal in Sources */,
+				0DAEA4AE29971A7B00C3A849 /* UniformsShape.swift in Sources */,
+				0DAEA4B029971AC800C3A849 /* Matrix.swift in Sources */,
+				0D9FC91229A59CF40014F77D /* UnitPointSphere.swift in Sources */,
+				0D86FBDD299940D2004F7CCE /* UniformsSprite.swift in Sources */,
+				0D1B8E4D29A6485E008558DB /* DimensionBridge.swift in Sources */,
+				0D9FC92E29A5B83F0014F77D /* Face.swift in Sources */,
+				0DD2818429A6F7AD00DFE839 /* CameraCalibrationTool.swift in Sources */,
+				0D86FBCE2999186D004F7CCE /* Math.swift in Sources */,
+				0D6FA4582995713E00BE0184 /* Graphics.swift in Sources */,
+				0D86FBDF2999481B004F7CCE /* Sprite2D.swift in Sources */,
+				0DEAE991299DCDE100EDA937 /* RecyclerShapeTriangle3D.swift in Sources */,
+				0D89E2452999698B004E2BCB /* UniformsShapeNodeIndexed.swift in Sources */,
+				0D97265E29A7AECC005DDEBF /* Stars.swift in Sources */,
+				0D9FC92C29A5B5D40014F77D /* TileFactory.swift in Sources */,
+				0DAEA4BA299721C400C3A849 /* MetalEngine.swift in Sources */,
+				0DAA67342996763600286C54 /* GameSceneView.swift in Sources */,
+				0DAEA4B9299721C400C3A849 /* MetalPipeline.swift in Sources */,
+				0D97264A29A70A97005DDEBF /* ZoomTable.swift in Sources */,
+				0D86FBD7299937B4004F7CCE /* Sprite.metal in Sources */,
+				0D9FC91629A5A8140014F77D /* Camera.swift in Sources */,
+				0D86FBD129991C0B004F7CCE /* RecyclerShapeTriangle2D.swift in Sources */,
+				0D89E24729997CC6004E2BCB /* SpriteNodeIndexed.metal in Sources */,
+				0DD2818629A6FC5000DFE839 /* Quaternion.swift in Sources */,
+				0D9FC91829A5AF720014F77D /* CameraTestMenuView.swift in Sources */,
+				0D6FA44C299570E800BE0184 /* ContentView.swift in Sources */,
+				0DAEA4B8299721C400C3A849 /* MetalView.swift in Sources */,
+				0DAEA4AC29971A0000C3A849 /* Shape.metal in Sources */,
+				0DAEA4A72997176400C3A849 /* Uniforms.swift in Sources */,
+				0D9FC90F29A59B3B0014F77D /* EarthScene.swift in Sources */,
+				0DEAE993299DD53200EDA937 /* RecyclerShapeQuad3D.swift in Sources */,
+				0DAEA4BB299721C400C3A849 /* MetalViewController.swift in Sources */,
+				0D9FC90D29A5999C0014F77D /* UniformsSpriteNodeIndexed.swift in Sources */,
+				0D86FBE12999494E004F7CCE /* RecyclerSprite2D.swift in Sources */,
+				0D6FA44A299570E800BE0184 /* RebuildEarthApp.swift in Sources */,
+				0D86FBD3299928B0004F7CCE /* RecyclerShapeQuad2D.swift in Sources */,
+				0D9FC91429A59E390014F77D /* Earth.swift in Sources */,
+				0D86FBD529992935004F7CCE /* Recycler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D6FA452299570EB00BE0184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D6FA453299570EB00BE0184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D6FA455299570EB00BE0184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RebuildEarth/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GG555KD5G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RebuildEarth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.raptis.earth.retool.RebuildEarth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D6FA456299570EB00BE0184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RebuildEarth/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GG555KD5G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RebuildEarth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.raptis.earth.retool.RebuildEarth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D6FA441299570E800BE0184 /* Build configuration list for PBXProject "RebuildEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6FA452299570EB00BE0184 /* Debug */,
+				0D6FA453299570EB00BE0184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D6FA454299570EB00BE0184 /* Build configuration list for PBXNativeTarget "RebuildEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6FA455299570EB00BE0184 /* Debug */,
+				0D6FA456299570EB00BE0184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D6FA43E299570E800BE0184 /* Project object */;
+}
