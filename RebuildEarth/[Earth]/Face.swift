@@ -20,7 +20,7 @@ class Face {
     private(set) var textureV_End: Float = 1.0
     
     var vertices: [Float] = [Float](repeating: 0.0, count: 5 * 4)
-    var indices: [UInt16] = [0, 1, 2, 1, 2, 3]
+    var indices: [UInt16] = [0, 1, 2, 2, 1, 3]
     
     var vertexBuffer: MTLBuffer!
     var indexBuffer: MTLBuffer!

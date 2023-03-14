@@ -7,20 +7,16 @@
 
 import SwiftUI
 
-struct GameSceneView: UIViewControllerRepresentable {
+struct EarthSceneView: UIViewControllerRepresentable {
     
     let width: CGFloat
     let height: CGFloat
     
-    func makeUIViewController(context: UIViewControllerRepresentableContext<GameSceneView>) -> MetalViewController {
+    func makeUIViewController(context: UIViewControllerRepresentableContext<EarthSceneView>) -> MetalViewController {
         
         let width = Float(Int(width + 0.5))
         let height = Float(Int(height + 0.5))
         
-        print("create game with size \(width) x \(height)")
-        
-        //let scene = GameScene()
-        //let scene = CubeScene()
         let scene = EarthScene()
         let graphics = Graphics(delegate: scene,
                                 width: width,
@@ -47,12 +43,9 @@ struct GameSceneView: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: MetalViewController,
-                                context: UIViewControllerRepresentableContext<GameSceneView>) {
+                                context: UIViewControllerRepresentableContext<EarthSceneView>) {
         let width = Float(Int(width + 0.5))
         let height = Float(Int(height + 0.5))
-        
-        print("update game with size \(width) x \(height)")
-        
         uiViewController.graphics.update(width: width,
                                          height: height)
     }

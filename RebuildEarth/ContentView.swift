@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                GameSceneView(width: round(geometry.size.width),
+                EarthSceneView(width: round(geometry.size.width),
                               height: round(geometry.size.height))
             }
         }

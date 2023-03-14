@@ -20,9 +20,7 @@ class MetalView: UIView {
                   height: CGFloat) {
         self.delegate = delegate
         self.graphics = graphics
-        print("width = \(width), height = \(height)")
         super.init(frame: CGRect(x: 0.0, y: 0.0, width: width, height: height))
-        //layer.frame = CGRect(x: 0.0, y: 0.0, width: width, height: height)
     }
     
     required init?(coder: NSCoder) {

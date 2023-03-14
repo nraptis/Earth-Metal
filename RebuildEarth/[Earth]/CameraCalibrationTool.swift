@@ -28,13 +28,13 @@ struct CameraCalibrationTool {
     }
     
     static func starsRestingRadius(graphics: Graphics) -> Float {
-        let diffX = graphics.width * 0.5
-        let diffY = graphics.height * 0.5
+        let diffX = graphics.width * 0.6
+        let diffY = graphics.height * 0.6
         var length = diffX * diffX + diffY * diffY
         if length > Math.epsilon {
             length = sqrtf(length)
         }
-        return (length + 6.0)
+        return length
     }
     
     static let screenMinDimensionRatio: Float = (min(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height) < 340.0) ? 0.95 : 0.78
@@ -45,8 +45,6 @@ struct CameraCalibrationTool {
     init() {
         sphere.load(tileCountH: Self.tileCountH, tileCountV: Self.tileCountV)
     }
-    
-    
     
     func calibrate(graphics: Graphics, camera: Camera, radius: Float) -> Float {
         
@@ -130,7 +128,7 @@ struct CameraCalibrationTool {
                                 unitEye: simd_float3,
                                 distance: Float) -> Float {
         
-        var holdDistance = camera.distance
+        let holdDistance = camera.distance
         
         camera.distance = distance
         camera.compute(perspective: perspective, unitEye: unitEye)

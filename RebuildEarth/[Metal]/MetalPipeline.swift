@@ -19,7 +19,6 @@ class MetalPipeline {
     static let shapeNodeIndexedVertexIndexUniforms = 1
     static let shapeNodeIndexedFragmentIndexUniforms = 0
     
-    
     static let spriteVertexIndexPosition = 0
     static let spriteVertexIndexTextureCoord = 1
     static let spriteVertexIndexUniforms = 2
@@ -73,7 +72,6 @@ class MetalPipeline {
     private var spriteNodeColoredIndexed2DFragmentProgram: MTLFunction!
     private var spriteNodeColoredIndexed3DVertexProgram: MTLFunction!
     private var spriteNodeColoredIndexed3DFragmentProgram: MTLFunction!
-    
     
     private(set) var pipelineStateShape2DNoBlending: MTLRenderPipelineState!
     private(set) var pipelineStateShape2DAlphaBlending: MTLRenderPipelineState!
@@ -250,7 +248,6 @@ class MetalPipeline {
         configPremultipliedBlending(pipelineDescriptor: pipelineDescriptor)
         pipelineStateShapeNodeIndexed2DPremultipliedBlending = try? device.makeRenderPipelineState(descriptor: pipelineDescriptor)
     }
-    
     
     private func buildPipelineStatesShapeNodeIndexed3D() {
         let pipelineDescriptor = MTLRenderPipelineDescriptor()

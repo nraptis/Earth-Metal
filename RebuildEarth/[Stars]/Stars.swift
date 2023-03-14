@@ -25,8 +25,6 @@ class Stars {
     private var uniformVertexBuffer: MTLBuffer!
     private var uniformFragmentBuffer: MTLBuffer!
     
-    var zoom: Float = 3.0
-    
     func load(graphics: Graphics, tileFactory: TileFactory, camera: Camera, earth: Earth) {
         self.camera = camera
         self.earth = earth
