@@ -125,15 +125,34 @@ extension matrix_float4x4 {
     }
     
     mutating func translate(x: Float, y: Float, z: Float) {
-        let tx = columns.0.x * x + columns.0.y * y + columns.0.z * z + columns.0.w
-        let ty = columns.1.x * x + columns.1.y * y + columns.1.z * z + columns.1.w
-        let tz = columns.2.x * x + columns.2.y * y + columns.2.z * z + columns.2.w
+        let tx = columns.0.x * x + columns.1.x * y + columns.2.x * z + columns.3.x
+        let ty = columns.0.y * x + columns.1.y * y + columns.2.y * z + columns.3.y
+        let tz = columns.0.z * x + columns.1.z * y + columns.2.z * z + columns.3.z
         var matrix = simd_float4x4()
+        /*
         matrix.make(m00: columns.0.x, m01: columns.1.x, m02: columns.2.x, m03: columns.3.x,
                     m10: columns.0.y, m11: columns.1.y, m12: columns.2.y, m13: columns.3.y,
                     m20: columns.0.z, m21: columns.1.z, m22: columns.2.z, m23: columns.3.z,
                     m30: tx, m31: ty, m32: tz, m33: columns.3.w)
+        */
+        matrix.make(m00: columns.0.x, m01: columns.0.y, m02: columns.0.z, m03: columns.0.w,
+                    m10: columns.1.x, m11: columns.1.y, m12: columns.1.z, m13: columns.1.w,
+                    m20: columns.2.x, m21: columns.2.y, m22: columns.2.z, m23: columns.2.w,
+                    m30: tx, m31: ty, m32: tz, m33: columns.3.w)
         self = matrix
+        
+        /*
+        FMatrix m = FMatrixCreate(pMatrix.m[0], pMatrix.m[1], pMatrix.m[2], pMatrix.m[3],
+                                  pMatrix.m[4], pMatrix.m[5], pMatrix.m[6], pMatrix.m[7],
+                                  pMatrix.m[8], pMatrix.m[9], pMatrix.m[10], pMatrix.m[11],
+                                  pMatrix.m[0] * tx + pMatrix.m[4] * ty + pMatrix.m[8] * tz + pMatrix.m[12],
+                                  pMatrix.m[1] * tx + pMatrix.m[5] * ty + pMatrix.m[9] * tz + pMatrix.m[13],
+                                  pMatrix.m[2] * tx + pMatrix.m[6] * ty + pMatrix.m[10] * tz + pMatrix.m[14],
+                                  pMatrix.m[15]);
+        return m;
+        */
+        
+        
     }
 
     mutating func translation(x: Float, y: Float, z: Float) {
