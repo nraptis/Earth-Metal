@@ -58,22 +58,9 @@ class MetalEngine {
         layer.device = device
         layer.contentsScale = scale
         layer.frame = CGRect(x: 0.0, y: 0.0, width: CGFloat(graphics.width), height: CGFloat(graphics.height))
-        
-        print("awake layer size \(layer.frame.width) x \(layer.frame.height)")
-        print("awake layer scale \(scale)")
-        
-        
-        
     }
     
     func load() {
-        let width = Int(CGFloat(graphics.width) * scale + 0.5)
-        let height = Int(CGFloat(graphics.height) * scale + 0.5)
-        
-        storageTexture = createStorageTexture(width: width, height: height)
-        antialiasingTexture = createAntialiasingTexture(width: width, height: height)
-        depthTexture = createDepthTexture(width: width, height: height)
-        
         buildSamplerStates()
         buildDepthStates()
         
@@ -88,6 +75,23 @@ class MetalEngine {
         guard let drawable = layer.nextDrawable() else { return }
         guard let commandBuffer = commandQueue.makeCommandBuffer() else { return }
         
+        if storageTexture === nil {
+            
+            //
+            // Note: The textures should always be sized to DRAWABLE width, this has caused
+            // crashes for more than 3 years...
+            //
+            
+            storageTexture = createStorageTexture(width: drawable.texture.width,
+                                                  height: drawable.texture.height)
+            antialiasingTexture = createAntialiasingTexture(width: drawable.texture.width,
+                                                            height: drawable.texture.height)
+            depthTexture = createDepthTexture(width: drawable.texture.width,
+                                              height: drawable.texture.height)
+            
+            //
+            //
+        }
         
         let renderPassDescriptor3D = MTLRenderPassDescriptor()
         renderPassDescriptor3D.colorAttachments[0].texture = storageTexture
